@@ -9,4 +9,4 @@ selected file and add it manually
 ● single space character is used to separate characters in a word, two space characters
 are used to separate words
 ● no difference between upper- and lower-case letters
-● characters that don't exist in Morse alphabet skiped
+● characters that don't exist in Morse alphabet skiped 
