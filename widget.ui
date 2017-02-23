@@ -22,7 +22,7 @@
         <string>Choose a mode</string>
        </property>
        <property name="text">
-        <string>Convert morse code to text</string>
+        <string>Morse code to text</string>
        </property>
       </widget>
      </item>
@@ -43,22 +43,47 @@
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
-        <widget class="QPlainTextEdit" name="plainTexEdit_Converted">
-         <property name="toolTip">
-          <string>Enter your text here</string>
-         </property>
-         <property name="toolTipDuration">
-          <number>-1</number>
-         </property>
-        </widget>
-       </item>
-       <item>
         <widget class="QPlainTextEdit" name="plainTextEdit_Origin">
          <property name="enabled">
           <bool>true</bool>
          </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
          <property name="focusPolicy">
-          <enum>Qt::NoFocus</enum>
+          <enum>Qt::StrongFocus</enum>
+         </property>
+         <property name="toolTip">
+          <string>Enter your text here</string>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+         <property name="plainText">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPlainTextEdit" name="plainTextEdit_Converted">
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::ClickFocus</enum>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="toolTipDuration">
+          <number>-1</number>
          </property>
          <property name="readOnly">
           <bool>true</bool>
@@ -71,6 +96,13 @@
       <widget class="QPushButton" name="pushButton_Do">
        <property name="text">
         <string>Convert</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_Clear">
+       <property name="text">
+        <string>Clear</string>
        </property>
       </widget>
      </item>
@@ -121,14 +153,7 @@
     </layout>
    </item>
   </layout>
-  <zorder>pushButton_OpenFile</zorder>
-  <zorder>pushButton_SaveFile</zorder>
-  <zorder>plainTexEdit_Converted</zorder>
-  <zorder>plainTextEdit_Origin</zorder>
-  <zorder>radioButton_toText</zorder>
-  <zorder>radioButton_toMorse</zorder>
   <zorder></zorder>
-  <zorder>pushButton_Do</zorder>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
